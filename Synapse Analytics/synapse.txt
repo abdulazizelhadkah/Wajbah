@@ -1,0 +1,13 @@
+wathba-ondemand.sql.azuresynapse.net
+1433
+WajbahDW
+sqladminuser
+Wajbah@wathba
+
+
+
+
+SQL5113.site4now.net
+db_aa6f00_wajbahdb
+db_aa6f00_wajbahdb_admin
+Kareem123
