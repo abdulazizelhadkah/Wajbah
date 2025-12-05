@@ -74,20 +74,16 @@ Instead of traditionally loading all data into Synapse's internal storage, we le
 * **Power BI:** Connects to Azure Synapse for interactive dashboards and reporting.
 * **Looker Studio:** Utilized for ad-hoc reporting and alternative visualization needs.
 
-## Getting Started
+## Cost Optimization Summary
+**Technology**	     **Benefit**
+ADLS Gen2	        Low-cost, scalable storage
+Delta Live Tables	  Automated optimization and incremental processing
+Databricks	        Compute used only during execution
+Synapse Serverless  Pay only per query
+External Tables	  No double storage, no warehouse compute
 
-### Prerequisites
-* Active Azure Subscription.
-* Access to the source Operational Database.
-* Service Principal credentials for mounting Data Lakes in Databricks.
+Overall savings:
 
-### Deployment Overview
-1.  **Infrastructure:** Provision Azure resources (ADF, ADLS, Databricks, Synapse) using ARM templates or Terraform.
-2.  **Configuration:**
-    * Set up Linked Services in ADF for Source and Sink.
-    * Mount ADLS containers (Bronze/Silver) in Databricks.
-    * Configure Synapse External Tables pointing to ADLS paths.
-3.  **Execution:** Trigger the ADF pipeline to start the flow.
+**Compute:** from 11 USD/hour to 1.10 USD/hour
 
-## License
-[Insert License Name]
+**Storage:** from 23 USD/TB to 0.50 USD/TB
