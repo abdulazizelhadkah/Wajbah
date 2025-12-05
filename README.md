@@ -4,10 +4,10 @@
 ## Overview
 Wajbah is a comprehensive cloud-native data platform built on Microsoft Azure. It is designed to ingest, process, store, and visualize operational data efficiently. The pipeline implements a Medallion Architecture (Bronze/Silver) pattern to ensure data quality and accessibility for business intelligence and analytics.
 
+## Architecture
+
 ![Infrastructure Diagram](Wajbah%20Data%20Platforom.drawio.png)
 
-
-## Architecture
 The platform follows a linear Extract-Load-Transform-Load (ELTL) workflow:
 
 1.  **Ingestion:** Data is extracted from the Operational Database using Azure Data Factory.
